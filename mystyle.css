@@ -128,3 +128,55 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.journey-section {
+    padding: 50px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+section h1 {
+    color: #FFD700; 
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+section h2 {
+    color: #A3CEF1; 
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+spon-container {
+    position: relative;
+    margin-top: 70px; 
+    white-space: nowrap; 
+    overflow: hidden;
+    width: 100%;
+    background-color: #f0f0f0; 
+    padding: 10px 0;
+}
+
+.spon {
+    width: 100px;
+    height: auto;
+    margin: 0 10px;
+    display: inline-block;
+    animation: moveHorizontal 8s linear infinite;
+}
+
+/* การเคลื่อนไหวของรูปภาพจากซ้ายไปขวา */
+@keyframes moveHorizontal {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(calc(100vw + 100px));
+    }
+}
