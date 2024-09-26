@@ -18,6 +18,9 @@ body {
     color: #E0E1DD;
     padding-top: 20px;
     background-color:  #0D1B2A ;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
 }
 
 
@@ -33,7 +36,19 @@ body {
     padding: 40px;
     z-index: 10;
     font-family: 'Lora', serif;
-    margin: 15px;
+    margin: 10px;
+    position: relative;
+    border: 5px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 15px; 
+    max-width: 800px; 
+    margin: 15px auto; 
+}
+.content {
+    padding: 5px;
+    z-index: 10;
+    font-family: 'Lora', serif;
+    margin: 10px;
     position: relative;
     border: 5px solid #ddd;
     background-color: rgba(255, 255, 255, 0.9); 
@@ -47,7 +62,7 @@ body {
     border-radius: 50%;
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 25px;
     width: 100px;
     height: auto;
     animation: rotate 5s linear infinite;
@@ -71,7 +86,7 @@ body {
     height: auto;
     overflow: hidden;
     opacity: 1;
-    transition: transform 0.5s ease, opacity 0.5s ease; /* แก้ไขการเปลี่ยนแปลง */
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .left:hover {
@@ -82,8 +97,10 @@ body {
 
 nav {
     background-color: #152545;
-    position: sticky;
     margin: - 15px;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
 }
 
 nav ul {
@@ -134,7 +151,7 @@ footer {
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 section h1 {
     color: #FFD700; 
@@ -143,7 +160,7 @@ section h1 {
     text-align: center;
 }
 section h2 {
-    color: #A3CEF1; 
+    color: #20415d; 
     font-size: 28px;
     margin-top: 30px;
 }
@@ -153,13 +170,12 @@ section p {
     line-height: 1.6;
 }
 
-spon-container {
+.spon-container {
     position: relative;
-    margin-top: 70px; 
+    margin-top: 15px; 
     white-space: nowrap; 
     overflow: hidden;
     width: 100%;
-    background-color: #f0f0f0; 
     padding: 10px 0;
 }
 
@@ -171,7 +187,7 @@ spon-container {
     animation: moveHorizontal 8s linear infinite;
 }
 
-/* การเคลื่อนไหวของรูปภาพจากซ้ายไปขวา */
+
 @keyframes moveHorizontal {
     0% {
         transform: translateX(-100%);
@@ -179,4 +195,9 @@ spon-container {
     100% {
         transform: translateX(calc(100vw + 100px));
     }
+}
+.futurestyle{
+    float: left;
+
+
 }
