@@ -137,7 +137,7 @@ video {
 }
 
 footer {
-    background-color: #3A506B;
+    background-color: #000000;
     color: #FFD700;
     text-align: center;
     padding: 10px;
@@ -160,6 +160,11 @@ section h1 {
     text-align: center;
 }
 section h2 {
+    color: #20415d; 
+    font-size: 28px;
+    margin-top: 30px;
+}
+section h5 {
     color: #20415d; 
     font-size: 28px;
     margin-top: 30px;
@@ -195,9 +200,4 @@ section p {
     100% {
         transform: translateX(calc(100vw + 100px));
     }
-}
-.futurestyle{
-    float: left;
-
-
 }
